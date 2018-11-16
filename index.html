@@ -1,0 +1,227 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>ShowClix</title>
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
+    <!-- FontAwesome for icons -->
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.5.0/css/all.css" integrity="sha384-B4dIYHKNBt8Bc12p+WXckhzcICo0wtJAoU8YZTY5qE0Id1GSseTk6S+L3BlXeVIU" crossorigin="anonymous">
+    <!-- Custom stylesheet -->
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <!-- Navbar -->
+
+    <nav class="navbar navbar-expand-lg navbar-light bg-light">
+        <a class="navbar-brand" href="#">
+            <!-- ShowClix Logo as Image -->
+            <img src="images/logo.png">
+        </a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNav">
+            <ul class="navbar-nav ml-auto">
+                <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle" href="#" id="signIn" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                        Sign In
+                    </a>
+                    <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                        <a class="dropdown-item" href="#"><i class="fas fa-ticket-alt"></i> My Tickets</a>
+                        <a class="dropdown-item" href="#"><i class="fas fa-key"></i> Client Login</a>
+                    </div>
+                </li>
+                <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle" href="#" id="signIn" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                        Help
+                    </a>
+                    <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                        <a class="dropdown-item" href="#">Client Support</a>
+                        <a class="dropdown-item" href="#">Customer Care</a>
+                    </div>
+                </li>
+                <button type="button" class="btn-call" data-toggle="tooltip" data-placement="bottom" title="+1800800800"><i class="fas fa-phone"></i></button>
+                <button class="btn btn-primary cta-btn">Planning an Event?</button>
+            </ul>
+        </div>
+    </nav>
+
+    <!-- Jumbotron -->
+
+    <div class="jumbotron">
+        <div class="tint"></div>
+        <h1 class="jb-bold">Find your next event</h1>
+        <div class="row justify-content-md-center">
+            <div class="col-md-4 nopadding">
+                <input type="text" class="customInput" placeholder="Search by event or category">
+            </div>
+            <div class="col-md-2 nopadding">
+                <input type="text" class="customInput" placeholder="Location">
+            </div>
+            <div class="col-md-2 nopadding">
+                <button class="inputBtn"><i class="fas fa-search"></i></button>
+            </div>
+        </div>
+    </div>
+
+    <!-- Tickets Container -->
+
+    <div class="bg-lightgrey">
+        <div class="container padding-50">
+            <h3 class="upcoming"><i class="far fa-calendar-alt"></i>&emsp;Upcoming Events</h3>
+            <div class="padding-topdown-50">
+                <div class="row justify-content-md-center">
+                    <div class="col-md-4">
+                        <div class="card" style="width: 100%">
+                            <img class="card-img-top" src="https://www.showclix.com/marketing/assets/i/buyer-homepage/featured-events/museum-of-ice-cream.jpg" alt="Card image cap">
+                            <div class="card-body">
+                                <h5 class="card-title">Museum of Ice Cream</h5>
+                                <ul>
+                                    <li><i class="fas fa-calendar-alt ic-round-cal"></i> Multiple Dates</li>
+                                    <li><i class="fas fa-map-marker-alt ic-round-venue"></i> Museum of Ice Cream San Francisco, San Fra...</li>
+                                </ul>
+                                <a href="#" class="btn btn-ticket">Get Tickets</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-4">
+                        <div class="card" style="width: 100%">
+                            <img class="card-img-top" src="https://www.showclix.com/marketing/assets/i/buyer-homepage/featured-events/mickey.jpg" alt="Card image cap">
+                            <div class="card-body">
+                                <h5 class="card-title">Mickey: The True Original Exhibition</h5>
+                                <ul>
+                                    <li><i class="fas fa-calendar-alt ic-round-cal"></i> Multiple Dates</li>
+                                    <li><i class="fas fa-map-marker-alt ic-round-venue"></i> 60 10th Avenue, New York, NY</li>
+                                </ul>
+                                <a href="#" class="btn btn-ticket">Get Tickets</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-4">
+                        <div class="card" style="width: 100%">
+                            <img class="card-img-top" src="https://www.showclix.com/marketing/assets/i/buyer-homepage/featured-events/color-factory.jpg" alt="Card image cap">
+                            <div class="card-body">
+                                <h5 class="card-title">Color Factory New York</h5>
+                                <ul>
+                                    <li><i class="fas fa-calendar-alt ic-round-cal"></i> Multiple Dates</li>
+                                    <li><i class="fas fa-map-marker-alt ic-round-venue"></i> Color Factory - NY, New York, NY</li>
+                                </ul>
+                                <a href="#" class="btn btn-ticket">Get Tickets</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="container padding-topdown-50">
+        <h1 class="ticket-bold">Looking for event ticketing and box office solutions?</h1>
+        <p class="center">
+            <button class="btn btn-success">GET STARTED NOW</button>
+            <button class="btn btn-primary">TAKE TOUR</button>
+        </p>
+    </div>
+    <!-- Footer -->
+    <div class="container-fluid footer padding-100">
+        <div class="container">
+                <div class="row">
+                        <div class="col-md-2">
+                            <p class="footerTitle">Event Ticketing Services</p>
+                            <a href="#" class="footerLink">Online Ticketing</a>
+                            <a href="#" class="footerLink">Box Office, Admissions & RFID</a>
+                            <a href="#" class="footerLink">Client Support</a>
+                            <a href="#" class="footerLink">Reserved Seating</a>
+                            <a href="#" class="footerLink">Ticket Scanners</a>
+                            <a href="#" class="footerLink">Call Center</a>
+                            <a href="#" class="footerLink">Event Operations</a>
+                            <a href="#" class="footerLink">Integrations & Partnerships</a>
+                            <a href="#" class="footerLink">Pricing</a>
+                        </div>
+                        <div class="col-md-2">
+                                <p class="footerTitle">Industry Solutions</p>
+                                <a href="#" class="footerLink">Comedy</a>
+                                <a href="#" class="footerLink">Consumer Shows</a>
+                                <a href="#" class="footerLink">Fandom Events</a>
+                                <a href="#" class="footerLink">Festivals</a>
+                                <a href="#" class="footerLink">Museums</a>
+                                <a href="#" class="footerLink">Music</a>
+                                <a href="#" class="footerLink">Pop-up Attractions</a>
+                        </div>
+                        <div class="col-md-2">
+                                <p class="footerTitle">Analytics Tools</p>
+                                <a href="#" class="footerLink">Timelines</a>
+                                <a href="#" class="footerLink">Live</a>
+                                <a href="#" class="footerLink">Segments</a>
+                                <a href="#" class="footerLink">Report Builder</a>
+                                <a href="#" class="footerLink">Marketing Integrations</a>
+                        </div>
+                        <div class="col-md-2">
+                                <p class="footerTitle">About Us</p>
+                                <a href="#" class="footerLink">Company</a>
+                                <a href="#" class="footerLink">Careers</a>
+                                <a href="#" class="footerLink">Press</a>
+                                <a href="#" class="footerLink">Resources</a>
+                                <a href="#" class="footerLink">Clients</a>
+                                <a href="#" class="footerLink">Blog</a>
+                                <a href="#" class="footerLink">Help</a>
+                                <a href="#" class="footerLink">Sitemap</a>
+                        </div>
+                        <div class="col-md-4 footericons">
+                                <a href="#" class="footerLink">Client Login</a>
+                                <a href="#" class="footerLink">Ticket Buyer Login</a>
+                                <a href="#" class="footerLink">Browse Events</a>
+                                <a href="#" class="footerLink">Contact Us</a>
+                                <hr class="white-ruler">
+                                <i class="fab fa-facebook"></i>
+                                <i class="fab fa-twitter"></i>
+                                <i class="fab fa-youtube"></i>
+                                <i class="fab fa-linkedin"></i>
+                                <i class="fab fa-instagram"></i>
+                                <i class="fab fa-google-plus"></i>
+                        </div>
+                    </div>
+                    <hr class="white-ruler">
+                    <div class="row">
+                        <div class="col-md-2">
+                            <a href="#" class="footerLink">Mobile Ticketing</a>
+                        </div>
+                        <div class="col-md-2">
+                            <a href="#" class="footerLink">Sell Tickets Online</a>
+                        </div>
+                        <div class="col-md-2">
+                            <a href="#" class="footerLink">Event Ticketing Software</a>
+                        </div>
+                        <div class="col-md-2">
+                            <a href="#" class="footerLink">Event Ticketing System</a>
+                        </div>
+                        <div class="col-md-2">
+                            <a href="#" class="footerLink">Box Office Ticketing</a>
+                        </div>
+                        <div class="col-md-2">
+                            <a href="#" class="footerLink">RFID Software</a>
+                        </div>
+                    </div>
+                    <hr class="white-ruler">
+                    <p class="white-footer-text"><img src="images/showclix-logo-white.png">Use of ShowClix is subject to our Terms of Service. Copyright © 2018 ShowClix Inc. All Rights Reserved.</p>
+        </div>
+    </div>
+    <div class="center-image">
+        <img src="images/patron-technology-logo-color.png">
+    </div>
+    <!-- jQuery -->
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+    <!-- Popper JS -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
+    <!-- Bootstrap JS -->
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy" crossorigin="anonymous"></script>
+    <!-- Activating tooltips -->
+    <script>
+        $(function () {
+            $('[data-toggle="tooltip"]').tooltip()
+        })
+    </script>
+</body>
+</html>
